@@ -1,6 +1,6 @@
 // Create Canvas \
 PImage photo;
-
+int o = 255;
 
 void setup() {
 
@@ -24,10 +24,9 @@ void draw() {
   text("b:  Box", 365, 455);
   text("c:  Phone", 80, 610);
   text("d:  Mouse Pad", 335, 610);
-  if (s + 1); {
-  fill(255, 255 - 10);
-  }
+  fill(255, o );
   rect(25, 20, 500, 340);
+  o = o - 1;
 }
 
 void keyPressed () {
