@@ -39,5 +39,9 @@ void keyPressed () {
     fill(0);
     text("Incorrect", 320, 440);
   }
-    
+    if (key == 'c'); {
+    textSize(50);
+    fill(0);
+    text("Incorrect", 40, 595);
+ 
 }
