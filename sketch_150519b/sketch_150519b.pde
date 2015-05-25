@@ -3,7 +3,7 @@ PImage photo;
 int s = second();
 
 void setup() {
-  
+
   size(550, 700);
   background(26, 194, 234);
   rect(25, 20, 500, 340); //main box
@@ -15,7 +15,7 @@ void setup() {
 }
 
 void draw() {
-  
+
   image( photo, 45, 25);
   fill(0);
   textSize(25);
@@ -25,15 +25,19 @@ void draw() {
   text("d:  Mouse Pad", 335, 610);
   fill(255, (255 - 10 + s));
   rect(25, 20, 500, 340);
-  
 }
 
 void keyPressed () {
- 
+
   if (key == 'a'); { 
-  textSize(50);
-  fill(0);
-  text ("Correct", 50, 440);
+    textSize(50);
+    fill(0);
+    text ("Correct", 50, 440);
   }
-  
+  if (key == 'b'); {
+    textSize(50);
+    fill(0);
+    text("Incorrect", 320, 440);
+  }
+    
 }
